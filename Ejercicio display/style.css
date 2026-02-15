@@ -1,0 +1,24 @@
+span{
+    display: block;
+}
+p{display: block;}
+
+img{
+    display: block;
+}
+a{
+    display: block;
+}
+.caja1{
+    display: inline;
+background-color: red;
+
+}
+.caja2{
+    display: block;
+background-color: blue;
+}
+.caja3{
+    display: inline-block;
+background-color: green;
+}
