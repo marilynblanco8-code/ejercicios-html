@@ -1,0 +1,63 @@
+#contenedor1 {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    height: 50%;
+    background-color: #f0f0f0;
+   margin: auto;
+}
+h1.titulo {
+    text-align: center;
+    margin:1em;
+    padding: 1em;
+    background: linear-gradient(45deg, #f04848, #ec7878, rgb(82, 109, 198));
+    -webkit-background-clip: text;/*Para navegadores basados en WebKit (Chrome, Safari) */
+    background-clip: text;/*Para navegadores compatibles con la especificación estándar */
+    color: transparent;/*Hace que el texto sea transparente para mostrar el fondo degradado */   
+    
+
+   
+}
+.imagen-flotante {
+  float: left;
+    width: 250px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(156, 146, 146, 0.3);
+    margin: 10px;
+}
+
+
+.imagen-flotante-derecha {
+  float: right;
+   width: 250px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(156, 146, 146, 0.3);
+    margin: 10px;
+    transform: scaleX(-1); /* Invierte horizontalmente el elemento */
+}
+.contenedor{
+   max-width: 800px;
+   border : 10px solid #ec1919;
+   line-height: 1.5;/* Aumenta el espacio entre líneas para mejorar la legibilidad */
+   border-image: linear-gradient(45deg, #f04848, #ec7878, rgb(82, 109, 198)) 1;/* Aplica un degradado al borde utilizando border-image */
+margin: auto;
+font-size: large;
+padding: 20px;
+text-align: center;
+}
+
+      
+.clearfix{
+    clear: both; /* Limpia los flotados para evitar que el contenedor colapse */
+}
+.final{
+        font-weight: bold;
+        padding: 40px;
+    }
+footer{
+        text-align: center;
+        background-color: #e2dddd;
+        padding: 20px;
+        margin-top: 20px;
+}
