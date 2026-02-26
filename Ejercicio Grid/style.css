@@ -1,0 +1,6 @@
+#contenedor{
+    display: grid; /*rejilla de paginacion*/
+    grid-template-columns: 50% 50%;
+    width: 800px; /*formateo*/
+    border: 1px solid black;
+}
