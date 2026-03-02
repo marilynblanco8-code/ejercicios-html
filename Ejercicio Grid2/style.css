@@ -50,6 +50,7 @@ background-color: var(--bg-black);
 }
 #bauhaus{
     
+    grid-area: bauhaus;
     text-align: center;
     background-color: var(--bg-white);
 
@@ -57,6 +58,7 @@ background-color: var(--bg-black);
     h1{
         font-size: 75px;
     }
+
     p{font-size: small;
         margin: 10px;
         padding: 10px 20px;
@@ -77,3 +79,51 @@ background-color: var(--bg-black);
     background-color: var(--bg-yellow);
     height: 60px;
 }
+@media only screen and (min-width: 768px){
+    #Contenedor{
+       grid-template-columns: repeat(6,1fr);
+       grid-template-areas: 
+       "azul1 azul1 azul1"
+       "bauhaus bauhaus bauhaus"
+       "blanco azul2 amarillo1"
+       "rojo1 rojo2 rojo2"
+       "amarillo2 rojo2 rojo2"
+       "amarillo2 rojo2 rojo2";}
+    
+       #azul1,#azul2,#blanco1,#amarillo1{
+        height: 100px;
+       }
+       #rojo1{
+        height: 150px;
+       }
+       #rojo2{
+        height: 500px;
+       }
+       #amarillo2{
+        height: 334px;
+       }
+       #bauhaus{
+        text-align: right;
+        padding-right: 20px;
+       }
+    }
+    @media only screen and (min-width: 1024px){
+        #Contenedor{
+           grid-template-columns: repeat(6,1fr);
+           grid-template-areas: 
+           "rojo2 rojo2 rojo2 azul1 azul1 azul1"
+           "amarillo2 rojo2 rojo2 bauhaus bauhaus bauhaus"
+           "amarillo2 rojo2 rojo2 blanco azul2 amarillo1";}
+        
+    #rojo2{
+        height: 680px;
+    }
+#amarillo2{
+    height: 515px;
+
+     }
+     #bauhaus{
+        margin-top: 50px;
+        height: 450px;
+     }
+    }
