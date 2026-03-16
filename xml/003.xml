@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="003.xsl"?>
+<productos>
+    <producto precio="34.50">Ratonn</producto>
+    <producto precio="89.99">Teclado</producto>
+</productos> 

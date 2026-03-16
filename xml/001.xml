@@ -1,5 +1,44 @@
-<persona> 
-<name>John Doe</name>
-<age>30</age>       
-<occupation>Software Engineer</occupation>
-</persona>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE colegio [
+<!ELEMENT colegio (alumnos, profesores)> 
+<!ELEMENT alumnos (alumno*)>
+<!ELEMENT alumno (nombre, apellido, edad, curso, activo?)>          
+<!ELEMENT profesores (profesor*)>
+<!ELEMENT profesor (nombre, apellido, materia)> 
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT apellido (#PCDATA)>       
+<!ELEMENT edad (#PCDATA)>
+<!ELEMENT curso (#PCDATA)>
+<!ELEMENT activo EMPTY>
+<!ELEMENT materia (#PCDATA)>
+]>  
+<colegio> 
+<alumnos>
+<alumno>
+    <nombre>Juan</nombre>
+    <apellido>Pérez</apellido>
+    <edad>15</edad>
+    <curso>10°</curso>
+</alumno>
+<alumno>
+    <nombre>Ana</nombre>
+    <apellido>García</apellido>
+    <edad>14</edad>
+    <curso>9°</curso>
+    <activo />
+</alumno>
+</alumnos>
+
+<profesores>
+<profesor>
+    <nombre>María</nombre>
+    <apellido>Gómez</apellido>
+    <materia>Matemáticas</materia>
+</profesor>
+<profesor>
+    <nombre>Carlos</nombre>
+    <apellido>Rodríguez</apellido>
+    <materia>Historia</materia>
+</profesor>
+</profesores>   
+</colegio>
